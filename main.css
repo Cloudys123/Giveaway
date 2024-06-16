@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.giveaway-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.details {
+    max-width: 500px;
+}
+
+.title {
+    font-size: 24px;
+    color: #355074;
+    margin: 0;
+}
+
+.end-date {
+    font-size: 14px;
+    color: #7a8b9a;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #7a8b9a;
+    margin: 20px 0;
+}
+
+.countdown {
+    display: flex;
+    gap: 10px;
+}
+
+.countdown-items {
+    background-color: #355074;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.number {
+    font-size: 24px;
+    display: block;
+}
+
+.label {
+    font-size: 12px;
+}
