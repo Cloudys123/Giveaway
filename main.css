@@ -14,15 +14,19 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
 }
 
 .image {
-    max-width: 300px;
-    margin-right: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .details {
-    max-width: 500px;
+    max-width: 100%;
 }
 
 .title {
@@ -31,21 +35,18 @@ body {
     margin: 0;
 }
 
-.end-date {
+.end-date,
+.description {
     font-size: 14px;
     color: #7a8b9a;
     margin: 10px 0;
 }
 
-.description {
-    font-size: 14px;
-    color: #7a8b9a;
-    margin: 20px 0;
-}
-
 .countdown {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .countdown-items {
@@ -54,6 +55,7 @@ body {
     padding: 10px 15px;
     text-align: center;
     border-radius: 5px;
+    min-width: 60px;
 }
 
 .number {
@@ -63,4 +65,26 @@ body {
 
 .label {
     font-size: 12px;
+}
+
+@media (min-width: 600px) {
+    .giveaway-container {
+        flex-direction: row;
+        text-align: left;
+        max-width: 80%;
+    }
+
+    .image {
+        max-width: 300px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .details {
+        max-width: 500px;
+    }
+
+    .countdown {
+        justify-content: flex-start;
+    }
 }
